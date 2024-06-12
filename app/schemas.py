@@ -52,7 +52,7 @@ class TokenData(BaseModel):
 class Vote(BaseModel):
     post_id: int
     #dir: conint(le=1)
-    dir: Annotated[int, Field(lt=2)]
+    dir: Annotated[int, Field(ge=0, le=1)]
     
         
 
