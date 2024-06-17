@@ -70,7 +70,8 @@ jobs:
       #     cache-to: type=local,dest=/tmp/.buildx-cache
       # - name: Image digest
       #   run: echo ${{ steps.docker_build.outputs.digest }}
-        
+       
+      # Testing password changes
       - name: deploy to ubuntu server
         uses: appleboy/ssh-action@master
         with:
