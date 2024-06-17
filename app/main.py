@@ -28,6 +28,6 @@ app.include_router(vote.router)
 
 @app.get("/")
 def root():
-    return {"testial": "test5x!"}
+    return {"message": "ubuntu test"}
 
 
