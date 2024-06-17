@@ -80,6 +80,6 @@ jobs:
           script: |
             cd app/src
             git pull
-            sudo -s systemctl restart
+            echo password | sudo -S systemctl restart
 
 
